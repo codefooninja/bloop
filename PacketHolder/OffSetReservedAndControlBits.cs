@@ -18,7 +18,7 @@ namespace PacketHolder
         public bool SYN;
         public bool FIN;
         #endregion
-        public BitArray bits
+        public BitArray Bits
         {
             get
             {

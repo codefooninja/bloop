@@ -16,11 +16,11 @@ namespace PacketHolder
                     ConvertToBinary(DestinationPort),
                     ConvertToBinary(SequenceNumber),
                     ConvertToBinary(AcknowledgementNumber),
-                    //OffSetReservedAndControlBits.Bits
+                    OffSetReservedAndControlBits.Bits,
                     ConvertToBinary(WindowSize),
                     ConvertToBinary(Checksum),
                     ConvertToBinary(UrgentPointer),
-                    //Options.Bits
+                    //Options.Bits andrew fix this part here!!!
                     ConvertToBinary(SourcePort),
                     ConvertToBinary(padding)
                      );
@@ -58,7 +58,7 @@ namespace PacketHolder
         public uint SequenceNumber; //32 bits
         public int AcknowledgementNumber; //32 bits
 
-        public OffSetReservedAndControlBits OffsetAndControl;
+        public OffSetReservedAndControlBits OffSetReservedAndControlBits;
       
         public ushort WindowSize;//16
         public ushort Checksum;//16
