@@ -16,14 +16,11 @@ namespace PacketHolder
                     ConvertToBinary(DestinationPort),
                     ConvertToBinary(SequenceNumber),
                     ConvertToBinary(AcknowledgementNumber),
-                    //ConvertToBinary(SourcePort),
+                    //OffSetReservedAndControlBits.Bits
                     ConvertToBinary(WindowSize),
                     ConvertToBinary(Checksum),
                     ConvertToBinary(UrgentPointer),
-                    ConvertToBinary(NoOperationPadding),
-                    ConvertToBinary(MaxSegmentSize),
-                    ConvertToBinary(WindowScale),
-                    ConvertToBinary(SelectiveAcknowledgementPermitted),
+                    //Options.Bits
                     ConvertToBinary(SourcePort),
                     ConvertToBinary(padding)
                      );
