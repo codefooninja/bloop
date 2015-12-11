@@ -46,7 +46,8 @@ namespace PacketHolder
             {
                 if (bits.Count  % 8 !=0 )
                 {
-                    continue;
+                    throw new Exception("Your bit does not match size, thus your packet will be bad and you should feel bad");
+                    
                 }
                 byteToWrite += bits.Count / 8;
                 bits.CopyTo(bytesToReturn, byteToWrite);
